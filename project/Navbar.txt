@@ -1,0 +1,50 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from '@mui/material';
+import Home1 from './Home1';
+import About1 from './AboutPage';
+
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <div className="navbar__logo">
+        <img src="https://t3.ftcdn.net/jpg/01/66/84/96/360_F_166849625_tPjczxCHpG1egnai8eUNRg20SSvMjzBT.jpg" alt="Garden Logo" />
+      </div>
+      <div className="navbar__links">
+        {/* Using Link components correctly */}
+        <Link to="/Home" className="navbar__link" >
+          <Button variant="contained" style={{ background: "grey", color: "white" }}>
+            Home
+          </Button>
+        </Link>
+        <Link to="/About" className="navbar__link">
+          <Button variant="contained" style={{ background: "grey", color: "white" }}>
+            About
+          </Button>
+        </Link>
+        <Link to="/Contact" className="navbar__link">
+          <Button variant="contained" style={{ background: "grey", color: "white" }}>
+            Contact
+          </Button>
+        </Link>
+        
+      </div>
+      <div className="navbar__sign-in">
+        <Link to="/Signin">
+          <Button variant="contained" style={{ background: "blue", color: "white" }}>
+            SignIn
+          </Button>
+        </Link>
+      </div>
+      <div className="navbar__sign-up">
+        <Link to="/Signup">
+          <Button variant="contained" style={{ background: "blue", color: "white" }}>
+            SignUp
+          </Button>
+        </Link>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

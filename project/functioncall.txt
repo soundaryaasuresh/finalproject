@@ -1,0 +1,36 @@
+import React from 'react';
+import Navbar from './Navbar';
+import './App.css';
+import Home from './Home';
+import SignInPage from './SignInPage';
+import GardeningList from './GardeningList';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SignUpPage from './SignupPage';
+import Home1 from './Home1';
+import AboutPage from './AboutPage';
+import ContactDetailsPage from './ContactDetailsPage';
+const App = () => {
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+        <main>
+          <h2>HAPPY GARDENING!</h2>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/GardeningList" element={<GardeningList />} />
+            <Route path="/Signup" element={<SignUpPage/>} />
+            <Route path="/Signin" element={<SignInPage />} />
+            <Route path="/Home" element={<Home1 />} />
+            <Route path="/About" element={<AboutPage/>} />
+            <Route path="/Contact" element={<ContactDetailsPage/>} />
+
+          </Routes>
+        </main>
+       
+      </div>
+    </Router>
+  );
+};
+
+export default App;

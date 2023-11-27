@@ -1,0 +1,48 @@
+import React from 'react';
+
+const ContactDetailsPage = () => {
+  const pageStyle = {
+    backgroundColor: '#f2f2f2',
+    padding: '20px',
+    color: '#444',
+    fontFamily: 'Arial, sans-serif',
+  };
+
+  const sectionStyle = {
+    backgroundColor: '#fff',
+    borderRadius: '8px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    padding: '20px',
+    margin: '20px',
+    textAlign: 'center',
+  };
+
+  const benefitsListStyle = {
+    listStyleType: 'circle',
+    textAlign: 'left',
+    paddingLeft: '20px',
+  };
+
+  return (
+    <div style={pageStyle}>
+      <h1 style={{ textAlign: 'center', marginBottom: '30px', color: '#333' }}>Contact Details</h1>
+      <div style={sectionStyle}>
+        <h2 style={{ color: '#1E90FF' }}>Home Gardening Contact Information</h2>
+        <p>
+          Address: 123 Garden Street<br />
+          City: Green Valley<br />
+          Phone: 123-456-7890<br />
+          Email: info@garden.com<br />
+        </p>
+      </div>
+      
+      <div style={{ textAlign: 'center', marginTop: '40px' }}>
+        <h2 style={{ color: '#333' }}>Start Your Home Garden Today!</h2>
+        <p style={{ color: '#555' }}>Experience the joy of gardening and its numerous benefits. Get your hands dirty and create a beautiful space!</p>
+        <button style={{ padding: '10px 20px', backgroundColor: '#32CD32', color: '#fff', border: 'none', borderRadius: '4px', fontSize: '16px', cursor: 'pointer' }}>Get Started</button>
+      </div>
+    </div>
+  );
+};
+
+export default ContactDetailsPage;

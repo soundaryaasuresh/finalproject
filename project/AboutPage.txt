@@ -1,0 +1,53 @@
+import { grey } from '@mui/material/colors';
+import React from 'react';
+
+const AboutPage = () => {
+  const pageStyle = {
+    backgroundColor:'grey',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    color: 'black',
+    padding: '20px',
+    minHeight: '100vh',
+    fontFamily: 'Arial, sans-serif',
+  };
+
+  const sectionStyle = {
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    borderRadius: '8px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    padding: '20px',
+    margin: '20px',
+    width: '40%',
+    textAlign: 'center',
+  };
+
+  return (
+    <div style={pageStyle}>
+      <h1 style={{ textAlign: 'center', marginBottom: '30px', color: 'black', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>About Home Gardening</h1>
+      <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', flexWrap: 'wrap' }}>
+        <div style={sectionStyle}>
+          <h2 style={{ color: 'black' }}>What is Home Gardening?</h2>
+          <p>Home gardening is the practice of growing and cultivating plants at home, typically for food, beauty, or therapeutic purposes.</p>
+        </div>
+        <div style={sectionStyle}>
+          <h2 style={{ color: 'black' }}>Benefits of Home Gardening</h2>
+          <p>
+            - Provides fresh and organic produce<br />
+            - Enhances mental well-being<br />
+            - Reduces stress<br />
+            - Adds beauty to your home<br />
+            - Encourages a healthy lifestyle
+          </p>
+        </div>
+      </div>
+      <div style={{ textAlign: 'center', marginTop: '40px' }}>
+        <h2 style={{ color: 'black', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>Start Your Home Garden Today!</h2>
+        <p style={{ color: 'black', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>Experience the joy of gardening and its numerous benefits. Get your hands dirty and create a beautiful space!</p>
+        <button style={{ padding: '10px 20px', backgroundColor: '#32CD32', color: '#fff', border: 'none', borderRadius: '4px', fontSize: '16px', cursor: 'pointer' }}>Get Started</button>
+      </div>
+    </div>
+  );
+};
+
+export default AboutPage;

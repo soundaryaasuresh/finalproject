@@ -1,0 +1,45 @@
+import React, { useState } from 'react';
+
+const SignUpPage = ({ onClose }) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  return (
+    <div className="sign-up-page">
+      <div className="sign-up-box">
+        <h2>Sign Up</h2>
+        <form>
+          <label htmlFor="Email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            value={email}
+            onChange={handleEmailChange}
+          />
+
+          <label htmlFor="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+
+          <button type="button" onClick={onClose}>
+            Sign Up
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default SignUpPage;

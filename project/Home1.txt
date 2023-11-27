@@ -1,0 +1,13 @@
+import React from 'react'
+import GardeningList from './GardeningList'
+
+const Home1 = () => {
+  return (
+    <div>
+        <h1></h1>
+        <GardeningList/>
+    </div>
+  )
+}
+
+export default Home1
